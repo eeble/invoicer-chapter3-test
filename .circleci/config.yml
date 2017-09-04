@@ -22,9 +22,6 @@ jobs:
       - run: mkdir -p "${GOPATH_HEAD}/bin"
       - run: go get github.com/govend/govend
       - run: echo "$DOCKER_REPO"
-      #- run: ln -fs "${HOME}/${CIRCLE_PROJECT_REPONAME}" "${GOPATH_BASE}/"
-          
-          
           
       - run:
           name: GO test application
@@ -50,7 +47,9 @@ jobs:
 
       - run:
           name: Run govend
-          command: 'GOPATH="${GOPATH_HEAD}"; ( cd ${GOPATH_BASE}/${CIRCLE_PROJECT_REPONAME} && govend -u && git diff --quiet )'
+          command: |
+            cd ${GOPATH_BASE}/${CIRCLE_PROJECT_REPONAME}
+            govend -u && git diff --quiet
 
       - deploy:
           command: |
