@@ -3,7 +3,7 @@ jobs:
   build:
     # Variable expansion in working_directory not supported at this time
     # You will need to modify the code below to reflect your github account/repo setup
-    working_directory: /go/src/github.com/<USERNAMEHERE>/<REPONAMEHERE>
+    working_directory: /go/src/github.com/eeble/invoicer-chapter3-test
     docker:
       - image: circleci/golang:1.8
     environment:
@@ -42,10 +42,10 @@ jobs:
             docker run ${DOCKER_REPO}/${CIRCLE_PROJECT_REPONAME}
           background: true
 
-      - run:
-          name: OWASP ZAP testing of application
-          command: |
-            docker run -t owasp/zap2docker-weekly zap-baseline.py -u https://raw.githubusercontent.com/Securing-DevOps/invoicer/master/zap-baseline.conf -t http://172.17.0.2:8080/
+#      - run:
+#          name: OWASP ZAP testing of application
+#          command: |
+#            docker run -t owasp/zap2docker-weekly zap-baseline.py -u https://raw.githubusercontent.com/Securing-DevOps/invoicer/master/zap-baseline.conf -t http://172.17.0.2:8080/
 
       - run:
           name: Run govend
