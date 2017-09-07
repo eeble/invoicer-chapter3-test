@@ -40,10 +40,10 @@ jobs:
             docker run ${DOCKER_REPO}/${CIRCLE_PROJECT_REPONAME}
           background: true
 
-#      - run:
-#          name: OWASP ZAP testing of application
-#          command: |
-#            docker run -t owasp/zap2docker-weekly zap-baseline.py -u https://raw.githubusercontent.com/Securing-DevOps/invoicer/master/zap-baseline.conf -t http://172.17.0.2:8080/
+      - run:
+          name: OWASP ZAP testing of application
+          command: |
+            docker run -t owasp/zap2docker-weekly zap-baseline.py -u https://raw.githubusercontent.com/Securing-DevOps/invoicer/master/zap-baseline.conf -t http://172.17.0.2:8080/
 
       - run:
           name: Run govend
