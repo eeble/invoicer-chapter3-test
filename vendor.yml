@@ -28,7 +28,7 @@ vendors:
 - path: github.com/wader/gormstore
   rev: a066dd77f804fa7d7af7c770180a2013c0ee4190
 - path: golang.org/x/crypto
-  rev: 8f297cd68bfa04239297e192d8ebff8928eab7a3
+  rev: 9ba3862cf6a5452ae579de98f9364dd2e544844c
 - path: golang.org/x/net
   rev: 66aacef3dd8a676686c7ae3716979581e8b03c47
 - path: golang.org/x/oauth2
