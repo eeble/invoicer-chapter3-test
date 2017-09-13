@@ -1,6 +1,6 @@
 vendors:
 - path: github.com/denisenkom/go-mssqldb
-  rev: 84dc5e6cc4a674abe81be5bf7835f4ae3dced817
+  rev: 2c6544812a77396578c2c2325ce320c36f76198a
 - path: github.com/erikstmartin/go-testdb
   rev: 8d10e4a1bae52cd8b81ffdec3445890d6dccab3d
 - path: github.com/go-sql-driver/mysql
@@ -28,11 +28,11 @@ vendors:
 - path: github.com/wader/gormstore
   rev: a066dd77f804fa7d7af7c770180a2013c0ee4190
 - path: golang.org/x/crypto
-  rev: 9ba3862cf6a5452ae579de98f9364dd2e544844c
+  rev: faadfbdc035307d901e69eea569f5dda451a3ee3
 - path: golang.org/x/net
-  rev: 66aacef3dd8a676686c7ae3716979581e8b03c47
+  rev: b129b8e0fbeb39c8358e51a07ab6c50ad415e72e
 - path: golang.org/x/oauth2
-  rev: d89af98d7c6bba047c5a2622f36bc14b8766df85
+  rev: 13449ad91cb26cb47661c1b080790392170385fd
 - path: golang.org/x/sync
   rev: f52d1811a62927559de87708c8913c1650ce4f26
 - path: google.golang.org/appengine
